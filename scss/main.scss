@@ -1,0 +1,19 @@
+.square {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.063rem solid black;
+  display: inline-block;
+}
+
+.square-grey {
+  background-color: grey;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.063rem solid black;
+  display: inline-block;
+}
+
+#board {
+  width: 6.25rem;
+  text-align: center;
+}

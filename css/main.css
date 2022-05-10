@@ -1,24 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.square {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.063rem solid black;
+  display: inline-block;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100vh;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #312E28;
+.square-grey {
+  background-color: grey;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.063rem solid black;
+  display: inline-block;
 }
 
-.chessboard {
-  width: 31.25rem;
-  height: 31.25rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  box-shadow: 0.625rem 0rem 0.625rem -0.625rem rgba(255, 255, 255, 0.4);
-  border-radius: 1.563rem;
+#board {
+  width: 6.25rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
