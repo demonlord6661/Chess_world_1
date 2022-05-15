@@ -35,22 +35,22 @@ const pieces = {
         pawn_8: { pos: "H7", icon: "chess-pawn", },
     },
     white: {
-        king: { pos: "D1", icon: "chess-king", },
-        queen: { pos: "E1", icon: "chess-queen", },
-        bishop_1: { pos: "C1", icon: "chess-bishop", },
-        bishop_2: { pos: "F1", icon: "chess-bishop", },
-        knight_1: { pos: "B1", icon: "chess-knight", },
-        knight_2: { pos: "G1", icon: "chess-knight", },
-        rook_1: { pos: "A1", icon: "chess-rook", },
-        rook_2: { pos: "H1", icon: "chess-rook", },
-        pawn_1: { pos: "A2", icon: "chess-pawn", },
-        pawn_2: { pos: "B2", icon: "chess-pawn", },
-        pawn_3: { pos: "C2", icon: "chess-pawn", },
-        pawn_4: { pos: "D2", icon: "chess-pawn", },
-        pawn_5: { pos: "E2", icon: "chess-pawn", },
-        pawn_6: { pos: "F2", icon: "chess-pawn", },
-        pawn_7: { pos: "G2", icon: "chess-pawn", },
-        pawn_8: { pos: "H2", icon: "chess-pawn", },
+        king: { pos: "D1", icon: "chess-king1", },
+        queen: { pos: "E1", icon: "chess-queen1", },
+        bishop_1: { pos: "C1", icon: "chess-bishop1", },
+        bishop_2: { pos: "F1", icon: "chess-bishop1", },
+        knight_1: { pos: "B1", icon: "chess-knight1", },
+        knight_2: { pos: "G1", icon: "chess-knight1", },
+        rook_1: { pos: "A1", icon: "chess-rook1", },
+        rook_2: { pos: "H1", icon: "chess-rook1", },
+        pawn_1: { pos: "A2", icon: "icons/chess-pawn1", },
+        pawn_2: { pos: "B2", icon: "chess-pawn1", },
+        pawn_3: { pos: "C2", icon: "chess-pawn1", },
+        pawn_4: { pos: "D2", icon: "chess-pawn1", },
+        pawn_5: { pos: "E2", icon: "chess-pawn1", },
+        pawn_6: { pos: "F2", icon: "chess-pawn1", },
+        pawn_7: { pos: "G2", icon: "chess-pawn1", },
+        pawn_8: { pos: "H2", icon: "chess-pawn1", },
     },
 };
 
@@ -84,7 +84,7 @@ var log = {
 // Register Event Listener Method Functions to Bind the Actions to the Event Triggering Elements
 var listeners = {
 
-    // Listen For When a Chess Piece is Clicked
+    // List For When a Chess Piece is Clicked
     selectPieces: function () {
         actions.consoleLog("[LISTENER] Select Pieces");
         let pieces = document.querySelectorAll('.chess-piece');
@@ -99,7 +99,7 @@ var listeners = {
         });
     },
 
-    // Listen for When an Empty Chess Square is Clicked
+    // List for When an Empty Chess Square is Clicked
     selectSquares: function () {
         actions.consoleLog("[LISTENER] Select Squares")
         let squares = document.querySelectorAll('.square');
@@ -178,7 +178,7 @@ var actions = {
         actions.consoleLog("[ACTION] Map Pieces", { color: color, pieces: p });
     },
 
-    // Deselect All Chess Piecees
+    // Deselect All Chess Pieces
     clearPieceSelectors: function () {
         actions.consoleLog("[ACTION] Clear Piece Selectors");
         document.querySelectorAll('.square').forEach((p, j) => {

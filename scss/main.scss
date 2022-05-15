@@ -1,52 +1,119 @@
-* {transition: all 0.2s linear !important;}
-
-#chess {
-  width: 100%; height:100%; display: block; background: #eee;
-  margin: 0; padding: 0; overflow: overlay;
+* {
+  transition: all 0.2s linear !important;
 }
 
-#wrap {display:block; margin: 1rem auto; max-width: 90%; width: 600px; padding: 1rem;}
+#chess {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
 
-#chess-board {border:solid 3px black; background:#eee; display:inline-flex; flex-wrap: wrap;}
+#wrap {
+  display: block;
+  margin: 1rem auto;
+  max-width: 90%;
+  width: 37.5rem;
+  padding: 1rem;
+}
+
+#chess-board {
+  border: solid 0.188rem black;
+  background: #eee;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 
 .square {
-  width: 75px; height: 75px; margin: 0; padding: 0; 
-  border: 0; max-width: 12.5%; text-align: center;
+  width: 4.688rem;
+  height: 4.688rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 12.5%;
+  text-align: center;
   display: inline-block;
 }
 
 .square.white,
-.chess-piece i.black {background: white;}
+.chess-piece i.black {
+  background: white;
+}
 .square.black,
-.chess-piece i.white {background: black;}
-
-.chess-piece i.black {color: black !important; border:solid 1px black;}
-.chess-piece i.white {color: white !important; border:solid 1px white;}
-
-.chess-piece i {
-  padding: 1rem; font-size: 1.5rem; margin-top: 0.5rem;
-  border-radius: 50%; width: 25px; height: 25px; max-width: 90%;
+.chess-piece i.white {
+  background: black;
 }
 
-.square.piece-selected {background-color: yellow !important;}
+.chess-piece i.black {
+  color: black !important;
+  border: solid 0.2rem black;
+}
+.chess-piece i.white {
+  color: white !important;
+  border: solid 0.2rem white;
+}
 
-.square.square-selected {background: orange !important;}
+.chess-piece i {
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  width: 1.563rem;
+  height: 1.563rem;
+  max-width: 90%;
+}
 
-.square.capturable-selected {background: red !important;}
+.square.piece-selected {
+  background-color: yellow !important;
+}
 
-.chess-panel {padding: 0.5rem; margin: 1rem auto;}
-.chess-panel-header {text-align:center;}
-.chess-panel.white {background: white;}
-.chess-panel.black {background: black;}
-.white-text {color: white;}
-.taken-pieces {padding: 0.5rem;}
-.chess-panel.white .taken-pieces {border: solid 1px black;}
-.chess-panel.black .taken-pieces {border: solid 1px white;}
+.square.square-selected {
+  background: orange !important;
+}
 
-@media screen and (max-width:1024px) {
+.square.capturable-selected {
+  background: red !important;
+}
+
+.chess-panel {
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+.chess-panel-header {
+  text-align: center;
+}
+.chess-panel.white {
+  background: white;
+}
+.chess-panel.black {
+  background: black;
+}
+.white-text {
+  color: white;
+}
+.taken-pieces {
+  padding: 0.5rem;
+}
+.chess-panel.white .taken-pieces {
+  border: solid 0.5rem black;
+}
+.chess-panel.black .taken-pieces {
+  border: solid 0.5rem white;
+}
+
+@media screen and (max-width: 1024px) {
   .chess-piece i {
-    margin-top: 0.5rem; width: 15px; height: 15px;
-    padding: 0.3rem; line-height: 0.5;
+    margin-top: 0.5rem;
+    width: 0.938rem;
+    height: 0.938rem;
+    padding: 0.3rem;
+    line-height: 0.5;
   }
-  .square {height: 80px; width: 80px;}
+  .square {
+    height: 5rem;
+    width: 5rem;
+  }
 }
