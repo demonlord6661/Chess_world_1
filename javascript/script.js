@@ -93,7 +93,7 @@ var listeners = {
                 piece.classList.add('init');
                 piece.addEventListener('click', function (e) {
                     actions.selectPiece(e);
-                    actions.consoleLog("<<<<<<<>>>>>>>", "", false);
+                    //actions.consoleLog("<<<<<<<>>>>>>>", "", false);
                 });
             }
         });
@@ -109,7 +109,7 @@ var listeners = {
                 square.addEventListener('click', function (e) {
                     e.preventDefault();
                     actions.selectSquare(e);
-                    actions.consoleLog("<<<<<<>>>>>>>", "", false);
+                    //actions.consoleLog("<<<<<<>>>>>>>", "", false);
                 });
             } else {
                 square.addEventListener('click', function (e) { e.preventDefault(); });
@@ -133,7 +133,7 @@ var actions = {
                 milliseconds: d.getMilliseconds()
             };
             log.raw.push({ stamp: d.toString().split(' ')[4], arg1: arg1, arg2: arg2, time: t });;
-            console.log(log);
+            //console.log(log);
             //console.log(lines ? '-------' : '');
         }
     },
@@ -169,7 +169,7 @@ var actions = {
     mapPieces: function (p, color) {
         for (key in p) {
             let pos = p.hasOwnProperty(key) ? p[key].pos : false;
-            //console.log({pos: pos});
+            console.log({pos: pos});
             let square = document.querySelector('.square[data-cell="' + pos + '"]');
             if (square) {
                 square.insertAdjacentHTML('beforeend', templates.piece(key, p[key], color));
