@@ -43,7 +43,7 @@ const pieces = {
         knight_2: { pos: "G1", icon: "chess-knight1", },
         rook_1: { pos: "A1", icon: "chess-rook1", },
         rook_2: { pos: "H1", icon: "chess-rook1", },
-        pawn_1: { pos: "A2", icon: "icons/chess-pawn1", },
+        pawn_1: { pos: "A2", icon: "chess-pawn1", },
         pawn_2: { pos: "B2", icon: "chess-pawn1", },
         pawn_3: { pos: "C2", icon: "chess-pawn1", },
         pawn_4: { pos: "D2", icon: "chess-pawn1", },
