@@ -7,7 +7,7 @@ function DCTN(val) { return document.createTextNode(val); }
 function DPFS(val) { return new DOMParser().parseFromString(val, 'text/html'); }
 
 // Debug Mode
-var debug_mode = true;
+var debug_mode = false;
 // JSON Database
 var database = [];
 // JSON Game Database
